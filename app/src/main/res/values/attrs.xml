@@ -2,7 +2,8 @@
 <resources>
     <declare-styleable name="CustomView">
         <attr name="circleColor" format="color" />
-        <attr name="circleLabel" format="string"/>
-        <attr name="labelColor" format="color"/>
+        <attr name="circleText" format="string" />
+        <attr name="circleTextColor" format="color"/>
+        <attr name="circle_textSize" format="float"/>
     </declare-styleable>
 </resources>

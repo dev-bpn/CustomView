@@ -1,5 +1,6 @@
 package custom_view.bpn.com.customview;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    private CustomView customView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
      * */
     private void customViewTasks() {
 
-
+        customView = (CustomView) findViewById(R.id.customView);
+        customView.setCircleColor(Color.BLUE);
+        customView.setCircleTextSize(35);
+        customView.setCircleText("customListView");
+        customView.setCircleTextColor(Color.RED);
 
     }
 
@@ -39,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                customView.setCircleColor(Color.RED);
+                customView.setCircleTextSize(50);
+                customView.setCircleText("Clicked customListView");
+                customView.setCircleTextColor(Color.BLACK);
 
             }
         });

@@ -12,13 +12,12 @@
     tools:context="custom_view.bpn.com.customview.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <custom_view.bpn.com.customview.view.CustomView
+    <custom_view.bpn.com.customview.CustomView
         android:id="@+id/customView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:circleColor="#ff0099"
-        app:circleLabel="Hello"
-        app:labelColor="#ffff66"/>
+        app:circleText="Click me here"
+        app:circleTextColor="@android:color/white"
+        app:circle_textSize="20"/>
 
 </RelativeLayout>
