@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
      * */
     private void customViewTasks() {
 
-
+        CustomView customView = (CustomView) findViewById(R.id.CustomView);
+        customView.setLeftLabel("Left Label");
+        customView.setRightLabel("Right Label");
 
     }
 

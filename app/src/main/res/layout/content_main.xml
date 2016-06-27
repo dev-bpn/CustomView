@@ -12,13 +12,14 @@
     tools:context="custom_view.bpn.com.customview.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <custom_view.bpn.com.customview.view.CustomView
-        android:id="@+id/customView"
-        android:layout_width="wrap_content"
+    <custom_view.bpn.com.customview.CustomView
+        android:id="@+id/CustomView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:circleColor="#ff0099"
-        app:circleLabel="Hello"
-        app:labelColor="#ffff66"/>
+        app:leftLabel=""
+        app:rightLabel=""
+        app:leftLabelStyle="@style/leftLabelStyle"
+        app:rightLabelStyle="@style/rightLabelStyle"
+        />
 
 </RelativeLayout>
