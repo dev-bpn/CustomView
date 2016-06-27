@@ -1,6 +1,5 @@
 package custom_view.bpn.com.customview;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,11 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import custom_view.bpn.com.customview.view.CustomView;
-
 public class MainActivity extends AppCompatActivity {
-
-    private CustomView customView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * TutsPlus Custom View task
-     * http://code.tutsplus.com/tutorials/android-sdk-creating-custom-views--mobile-14548
+     * Custom View task
      *
      * */
     private void customViewTasks() {
-        customView = (CustomView) findViewById(R.id.customView);
+
+
+
     }
 
     /**Fab Tasks*/
@@ -43,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                customView.setCircleColor(Color.GREEN);
-                customView.setLabelColor(Color.MAGENTA);
-                customView.setLabelText("Help");
 
             }
         });
